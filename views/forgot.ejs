@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="x-icon" href="image.png" />
+  </head>
+  <body>
+    <a
+      style="float: right; font-size: 20px; color: black; align-self: flex-end"
+      href="/login"
+      >Login Page</a
+    >
+    <div class="login_div">
+      <form class="form forgot_fomr" action="/reset" method="post">
+        <div class="p_heading">
+          <h1 class="heading">Forgot Password</h1>
+          <p>Enter Your Registered Email Id</p>
+        </div>
+        <input
+          required
+          placeholder="Enter Email Id"
+          class="Username"
+          type="email"
+          name="email_id"
+          autocomplete="off"
+        />
+        <input
+          style="cursor: pointer"
+          class="login_btn"
+          type="submit"
+          value="Reset"
+        />
+      </form>
+      <h4><%= error %></h4>
+    </div>
+    
+  </body>
+</html>
